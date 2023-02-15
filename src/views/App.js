@@ -1,7 +1,7 @@
-import pigify from "../pigify";
+import pigify from "../web3/pigify";
 import { useEffect, useState } from "react";
-import Piggybank from "../components/Piggybank";
-import web3 from "../web3";
+import PiggyBank from "../components/PiggyBank";
+import web3 from "../web3/web3";
 
 const App = function() {
     const [address, setAddress] = useState("Unknown address");
@@ -39,9 +39,9 @@ const App = function() {
             <p>Your address: {address}</p>
             <p>Your PGY: {freePGY}</p>
             <hr />
-            <Piggybank coinName="PGY" balance={balancePGY} goal={goalPGY}/>
+            <PiggyBank coinName="PGY" balance={balancePGY} goal={goalPGY}/>
             <hr />
-            <Piggybank coinName="USDT" balance={balanceUSDT} goal={goalUSDT}/>
+            <PiggyBank coinName="USDT" balance={balanceUSDT} goal={goalUSDT}/>
         </div>
     );
 }

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7aec8ed4-a412-482f-b961-4b65add8f772" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../pigify-core/deploy.js" beforeDir="false" afterPath="$PROJECT_DIR$/../pigify-core/deploy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Piggybank.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Piggybank.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2LKIaRyM9UOVldek0tuQpvBDxGZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/andres/Documents/Development/Pigify/pigify-web/src&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="deploy.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../pigify-core/deploy.js" working-dir="$PROJECT_DIR$/../pigify-core">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.deploy.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7aec8ed4-a412-482f-b961-4b65add8f772" name="Changes" comment="" />
+      <created>1675613411394</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1675613411394</updated>
+      <workItem from="1675613412869" duration="133000" />
+      <workItem from="1675613593963" duration="5803000" />
+      <workItem from="1675910036083" duration="86000" />
+      <workItem from="1675910129532" duration="2000" />
+      <workItem from="1675910150643" duration="1609000" />
+      <workItem from="1676033403367" duration="183000" />
+      <workItem from="1676033598204" duration="5268000" />
+      <workItem from="1676041397560" duration="2030000" />
+      <workItem from="1676065286824" duration="13229000" />
+      <workItem from="1676236121711" duration="1933000" />
+      <workItem from="1676253083238" duration="2388000" />
+    </task>
+    <task id="LOCAL-00001" summary="README: Add testnet address">
+      <created>1676041552330</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676041552330</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1676127872175</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1676127872176</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Improve deploy script">
+      <created>1676127928263</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676127928263</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Increase gas limit so tests don't fail">
+      <created>1676208341825</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676208341826</updated>
+    </task>
+    <task id="LOCAL-00005" summary="README: Latest contract address">
+      <created>1676208720354</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676208720354</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Show balance and goal">
+      <created>1676212725379</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676212725379</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="README: Add testnet address" />
+    <MESSAGE value="Initial commit" />
+    <MESSAGE value="Improve deploy script" />
+    <MESSAGE value="Increase gas limit so tests don't fail" />
+    <MESSAGE value="README: Latest contract address" />
+    <MESSAGE value="Show balance and goal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Show balance and goal" />
+  </component>
+</project>

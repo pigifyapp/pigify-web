@@ -1,0 +1,39 @@
+.metamask-button {
+    background-color: #f1611a;
+    color: white;
+}
+
+.whitepaper-icon {
+    color: #009FB7;
+}
+
+.hero-section {
+
+}
+
+.navbar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.is-strong {
+    color: black;
+}
+
+.is-pink {
+    color: #DA4167;
+}
+
+.is-pink-button {
+    color: #DA4167;
+    font-weight: 600;
+}
+
+.is-yellow {
+    color: #ffc300;
+}
+
+.roadmap {
+    background: rgb(208,206,228);
+    background: linear-gradient(90deg, rgba(208,206,228,1) 0%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
+}
