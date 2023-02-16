@@ -5,7 +5,7 @@ export default function Roadmap() {
     return (
         <section className="roadmap">
             <div className="container" id="roadmap">
-                <div className="columns is-centered py-6">
+                <div className="columns is-centered has-text-centered py-6">
                     <div className="title is-black">Our roadmap</div>
                 </div>
 
