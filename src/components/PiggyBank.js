@@ -1,16 +1,17 @@
-const PiggyBank = function(props) {
+import DAI from "../images/DAI.png";
+
+const PiggyBank = function({tokenName, balance, goal, rewards, image}) {
 
     return (
-        <div>
-            <h4>Piggybank for {props.coinName}</h4>
-            <p>Balance: {props.balance.toLocaleString("en-US")}</p>
-            <p>Goal: {props.goal}</p>
-            <form>
-                <input type="number" placeholder="100"/>
-                <button>Deposit</button>
-            </form>
-            <button>Withdraw</button>
-        </div>
+        <tr>
+            <th className="has-text-centered"><img src={image} alt="DAI" width="18px" height="18px"/></th>
+            <th>{tokenName}</th>
+            <th>{balance}</th>
+            <th>{goal}</th>
+            <th>{rewards} PGY</th>
+            <th><a href="#">Deposit</a></th>
+            <th><a href="#">Withdraw</a></th>
+        </tr>
     );
 }
 

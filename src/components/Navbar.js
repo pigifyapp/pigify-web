@@ -1,4 +1,4 @@
-export default function Navbar() {
+export default function Navbar({ isSaving, handleSavingButton }) {
     return (
         <div className="container">
             <nav className="navbar" role="navigation" aria-label="main navigation">
@@ -54,9 +54,13 @@ export default function Navbar() {
                         </a>
 
                         <div className="navbar-item">
-                            <a href="#" className="button">
+                            {isSaving && <a href="#" className="button">
                                 <strong>Presale</strong>
-                            </a>
+                            </a>}
+
+                            {!isSaving && <a onClick={handleSavingButton} href="#" className="button is-danger">
+                                <strong>Log out</strong>
+                            </a>}
                         </div>
                     </div>
                 </div>

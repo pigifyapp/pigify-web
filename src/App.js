@@ -1,36 +1,29 @@
 import Navbar from "./components/Navbar";
 import Roadmap from "./components/Roadmap";
 import Tokenomics from "./components/Tokenomics";
-import web3 from "./web3/web3";
-import savingImage from "./images/saving.jpg";
+import {useState} from "react";
+import MainHero from "./components/MainHero";
+import PiggyBankList from "./components/PiggyBankList";
 
 export default function App() {
+    const [isSaving, setIsSaving] = useState(false);
+
+    const handleSavingButton = function() {
+        setIsSaving(!isSaving);
+    };
 
     return (
         <div>
-            <Navbar />
+            <Navbar isSaving={isSaving} handleSavingButton={handleSavingButton} />
 
-            <section className="hero hero-section is-fullheight-with-navbar">
-                <div className="hero-body columns">
-                    <div className="column">
-                        <p className="title is-strong">
-                            Shape your financial destiny.
-                        </p>
+            {isSaving && <div>
+                <MainHero handleSavingButton={handleSavingButton} />
+                <Tokenomics />
+                <Roadmap />
+            </div>}
 
-                        <p className="subtitle is-strong">
-                            Pigify is an <strong>open source</strong> dapp made up of several smart contracts that will force you to save and <strong>achieve your financial goals</strong>.
-                        </p>
-                    </div>
+            {!isSaving && <PiggyBankList />}
 
-                    <div className="column">
-                        <img src={savingImage} alt="sd"/>
-                    </div>
-                </div>
-            </section>
-
-            <Tokenomics />
-
-            <Roadmap />
         </div>
     );
 }
