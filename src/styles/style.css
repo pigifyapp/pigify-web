@@ -33,7 +33,13 @@
     color: #ffc300;
 }
 
-.roadmap {
-    background: rgb(208,206,228);
-    background: linear-gradient(90deg, rgba(208,206,228,1) 0%, rgba(255,255,255,1) 100%, rgba(0,212,255,1) 100%);
+.roadmap-container {
+    border-radius: 40px;
+    background: linear-gradient(110deg, #fdcd3b 50%, #ffed4b 50%);
+}
+
+.roadmap-title {
+    color: white;
+    font-weight: bolder;
+    letter-spacing: 0.3rem;
 }

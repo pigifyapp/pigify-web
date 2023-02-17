@@ -45,7 +45,7 @@ export default function Navbar() {
                             <span> Roadmap </span>
                         </a>
 
-                        <a href="#roadmap" className="navbar-item">
+                        <a href="#tokenomics" className="navbar-item">
                             <span className="icon is-yellow">
                                 <i className="fa-solid fa-bolt"></i>
                             </span>

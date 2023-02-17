@@ -3,13 +3,16 @@ import "bulma-steps/dist/js/bulma-steps.min";
 
 export default function Roadmap() {
     return (
-        <section className="roadmap">
-            <div className="container" id="roadmap">
-                <div className="columns is-centered has-text-centered py-6">
-                    <div className="title is-black">Our roadmap</div>
+        <section className="roadmap pt-6" id="roadmap">
+            <div className="container has-text-centered">
+                <div className="columns">
+                    <div className="column">
+                        <p className="title">Roadmap</p>
+                    </div>
                 </div>
-
-                <div className="columns is-centered pb-6">
+            </div>
+            <div className="container roadmap-container my-6">
+                <div className="columns is-centered py-1">
                     <div className="column">
                         <div className="steps">
                             <div className="step-item is-completed is-success">
@@ -21,9 +24,8 @@ export default function Roadmap() {
                                 <div className="step-details">
                                     <p className="step-title">Q1 2023</p>
                                     <ul>
-                                        <li>Tokenomics</li>
+                                        <li><del>Tokenomics</del></li>
                                         <li>Whitepaper</li>
-                                        <li>Premarketing</li>
                                         <li>Presale</li>
                                     </ul>
                                 </div>

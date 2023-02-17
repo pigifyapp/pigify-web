@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Roadmap from "./components/Roadmap";
+import Tokenomics from "./components/Tokenomics";
 import web3 from "./web3/web3";
 import savingImage from "./images/saving.jpg";
 
@@ -26,6 +27,8 @@ export default function App() {
                     </div>
                 </div>
             </section>
+
+            <Tokenomics />
 
             <Roadmap />
         </div>
