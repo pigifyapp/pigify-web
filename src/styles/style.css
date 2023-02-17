@@ -34,8 +34,8 @@
 }
 
 .roadmap-container {
-    border-radius: 40px;
-    background: linear-gradient(110deg, #fdcd3b 50%, #ffed4b 50%);
+    border-radius: 10px;
+    background: linear-gradient(110deg, #ffc8dd 50%, #ffafcc 50%);
 }
 
 .roadmap-title {
