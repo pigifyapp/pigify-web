@@ -35,9 +35,9 @@ export default function Roadmap() {
                                 <div className="step-details">
                                     <p className="step-title">Q2 2023</p>
                                     <ul>
-                                        <li>Website launch</li>
-                                        <li>Marketing campaign</li>
-                                        <li>Token public release</li>
+                                        <li>Forced saving</li>
+                                        <li>Public release</li>
+                                        <li>Marketing</li>
                                     </ul>
                                 </div>
                             </div>
@@ -47,8 +47,8 @@ export default function Roadmap() {
                                     <p className="step-title">Q3 2024</p>
                                     <ul>
                                         <li>Save-to-Earn</li>
-                                        <li>Affiliates system</li>
-                                        <li>Website improvements</li>
+                                        <li>Mobile app launch</li>
+                                        <li>Marketing</li>
                                     </ul>
                                 </div>
                             </div>

@@ -8,7 +8,7 @@ const data = {
     datasets: [
         {
             label: "% of total supply",
-            data: [9, 11, 8, 10, 5, 5, 10, 42],
+            data: [19, 11, 8, 10, 5, 5, 10, 32],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
                 'rgba(54, 162, 235, 0.2)',
@@ -44,7 +44,7 @@ export default function Tokenomics() {
                 <div className="container my-4">
                     <div className="columns is-vcentered">
                         <div className="column">
-                            <p className="has-text-left"><strong>Rewards</strong> (42%)</p>
+                            <p className="has-text-left"><strong>Rewards</strong> (32%)</p>
                             <p className="has-text-left">Reserved for stakeholder rewards</p>
 
                             <hr/>
@@ -64,7 +64,7 @@ export default function Tokenomics() {
 
                             <hr/>
 
-                            <p className="has-text-left"><strong>Team</strong> (9%)</p>
+                            <p className="has-text-left"><strong>Team</strong> (19%)</p>
                             <p className="has-text-left">Assigned to the founding members of the project</p>
 
                             <hr/>
