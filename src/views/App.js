@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import PiggyBank from "../components/PiggyBank";
 import web3 from "../web3/web3";
 
-const App = function() {
+export default function App() {
     const [address, setAddress] = useState("Unknown address");
     const [freePGY, setFreePGY] = useState("");
 
@@ -45,5 +45,3 @@ const App = function() {
         </div>
     );
 }
-
-export default App;
