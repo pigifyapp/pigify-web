@@ -3,7 +3,7 @@ import Roadmap from "./components/Roadmap";
 import Tokenomics from "./components/Tokenomics";
 import {useState} from "react";
 import MainHero from "./components/MainHero";
-import PiggyBankList from "./components/PiggyBankList";
+import BankList from "./components/BankList";
 
 export default function App() {
     const [isSaving, setIsSaving] = useState(false);
@@ -22,7 +22,7 @@ export default function App() {
                 <Roadmap />
             </div>}
 
-            {isSaving && <PiggyBankList />}
+            {isSaving && <BankList />}
 
         </div>
     );

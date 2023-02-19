@@ -1,11 +1,11 @@
-import PiggyBank from "./PiggyBank";
+import BankEntry from "./BankEntry";
 import StakingCard from "./StakingCard";
 import "bulma-list/css/bulma-list.css";
 import USDC from "../images/USDC.png";
 import USDT from "../images/USDT.png";
 import DAI from "../images/DAI.png";
 
-export default function PiggyBankList() {
+export default function BankList() {
 
     return (
         <section className="hero hero-section is-fullheight-with-navbar">
@@ -29,9 +29,9 @@ export default function PiggyBankList() {
                         </thead>
 
                         <tbody>
-                            <PiggyBank tokenName="USDT" balance="0" goal="0" rewards="0" image={USDT}/>
-                            <PiggyBank tokenName="USDC" balance="0" goal="0" rewards="0" image={USDC}/>
-                            <PiggyBank tokenName="DAI" balance="0" goal="0" rewards="0" image={DAI}/>
+                            <BankEntry tokenName="USDT" balance="0" goal="0" rewards="0" image={USDT}/>
+                            <BankEntry tokenName="USDC" balance="0" goal="0" rewards="0" image={USDC}/>
+                            <BankEntry tokenName="DAI" balance="0" goal="0" rewards="0" image={DAI}/>
                         </tbody>
                     </table>
                 </div>

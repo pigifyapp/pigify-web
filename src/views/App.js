@@ -1,6 +1,6 @@
 import pigify from "../web3/pigify";
 import { useEffect, useState } from "react";
-import PiggyBank from "../components/PiggyBank";
+import BankEntry from "../components/BankEntry";
 import web3 from "../web3/web3";
 
 export default function App() {
@@ -39,9 +39,9 @@ export default function App() {
             <p>Your address: {address}</p>
             <p>Your PGY: {freePGY}</p>
             <hr />
-            <PiggyBank coinName="PGY" balance={balancePGY} goal={goalPGY}/>
+            <BankEntry coinName="PGY" balance={balancePGY} goal={goalPGY}/>
             <hr />
-            <PiggyBank coinName="USDT" balance={balanceUSDT} goal={goalUSDT}/>
+            <BankEntry coinName="USDT" balance={balanceUSDT} goal={goalUSDT}/>
         </div>
     );
 }

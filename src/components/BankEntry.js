@@ -1,6 +1,6 @@
 import DAI from "../images/DAI.png";
 
-const PiggyBank = function({tokenName, balance, goal, rewards, image}) {
+const BankEntry = function({tokenName, balance, goal, rewards, image}) {
 
     return (
         <tr>
@@ -15,4 +15,4 @@ const PiggyBank = function({tokenName, balance, goal, rewards, image}) {
     );
 }
 
-export default PiggyBank;
+export default BankEntry;
