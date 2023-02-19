@@ -4,6 +4,7 @@ import "bulma-list/css/bulma-list.css";
 import USDC from "../images/USDC.png";
 import USDT from "../images/USDT.png";
 import DAI from "../images/DAI.png";
+import TUSD from "../images/TrueUSD.jpeg";
 
 export default function BankList() {
 
@@ -32,6 +33,7 @@ export default function BankList() {
                             <BankEntry tokenName="USDT" balance="0" goal="0" rewards="0" image={USDT}/>
                             <BankEntry tokenName="USDC" balance="0" goal="0" rewards="0" image={USDC}/>
                             <BankEntry tokenName="DAI" balance="0" goal="0" rewards="0" image={DAI}/>
+                            <BankEntry tokenName="TUSD" balance="0" goal="0" rewards="0" image={TUSD}/>
                         </tbody>
                     </table>
                 </div>
