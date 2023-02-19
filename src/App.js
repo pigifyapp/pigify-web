@@ -16,13 +16,13 @@ export default function App() {
         <div>
             <Navbar isSaving={isSaving} handleSavingButton={handleSavingButton} />
 
-            {isSaving && <div>
+            {!isSaving && <div>
                 <MainHero handleSavingButton={handleSavingButton} />
                 <Tokenomics />
                 <Roadmap />
             </div>}
 
-            {!isSaving && <PiggyBankList />}
+            {isSaving && <PiggyBankList />}
 
         </div>
     );
