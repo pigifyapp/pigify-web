@@ -1,10 +1,54 @@
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import BankEntryModal from "./BankEntryModal";
+import pigify from "../web3/pigify";
 
-const BankEntry = function({tokenName, balance, goal, rewards, image}) {
+const BankEntry = function({address, tokenName, image}) {
     const [isDepositModalOpen, setDepositModalOpen] = useState(false);
     const [isWithdrawModalOpen, setWithdrawModalOpen] = useState(false);
     const [isGoalModalOpen, setGoalModelOpen] = useState(false);
+
+    const [balance, setBalance] = useState(0);
+    const [goal, setGoal] = useState(0);
+    const [rewards, setRewards] = useState(0);
+
+    useEffect(() => {
+        fetchEverything();
+    }, [])
+
+    async function fetchEverything() {
+        await fetchTokenBalance();
+        await fetchTokenGoal();
+    }
+
+    async function fetchTokenBalance() {
+        const method = pigify.methods["balance" + tokenName];
+
+        console.log(pigify.methods);
+
+        if(method) {
+            const balanceWithDecimals = await method(address).call();
+            const balanceWithoutDecimals = balanceWithDecimals / Math.pow(10, 18)
+
+            setBalance(balanceWithoutDecimals);
+        } else {
+            setBalance(-1);
+        }
+    }
+
+    async function fetchTokenGoal() {
+        const method = pigify.methods["goal" + tokenName];
+
+        console.log(pigify.methods);
+
+        if(method) {
+            const goalWithDecimals = await method.call();
+            const goalWithoutDecimals = goalWithDecimals / Math.pow(10, 18)
+
+            setGoal(goalWithoutDecimals);
+        } else {
+            setGoal(-1);
+        }
+    }
 
     function openDepositModal() {
         setDepositModalOpen(true);
@@ -34,9 +78,9 @@ const BankEntry = function({tokenName, balance, goal, rewards, image}) {
         <tr>
             <td className="has-text-centered"><img src={image} alt="Token" width="18px" height="18px"/></td>
             <td>{tokenName}</td>
-            <td>{balance}</td>
-            <td>{goal}</td>
-            <td>{rewards} PGY</td>
+            <td>{balance.toLocaleString("en-US")}</td>
+            <td>{goal.toLocaleString("en-US")}</td>
+            <td>{rewards.toLocaleString("en-US")} PGY</td>
             <td><a onClick={openDepositModal}>Deposit</a></td>
             <td><a onClick={openWithdrawModal}>Withdraw</a></td>
             <td><a onClick={openGoalModal}>Set goal</a></td>

@@ -5,8 +5,20 @@ import USDC from "../images/USDC.png";
 import USDT from "../images/USDT.png";
 import DAI from "../images/DAI.png";
 import TUSD from "../images/TrueUSD.jpeg";
+import web3 from "../web3/web3";
+import {useEffect, useState} from "react";
 
 export default function BankList() {
+    const [address, setAddress] = useState("");
+
+    async function fetchAddress() {
+        const accounts = await web3.eth.getAccounts();
+        setAddress(accounts[0]);
+    }
+
+    useEffect(() => {
+        fetchAddress()
+    }, []);
 
     return (
         <section className="hero hero-section is-fullheight-with-navbar">
@@ -29,12 +41,14 @@ export default function BankList() {
                         </tr>
                         </thead>
 
-                        <tbody>
-                            <BankEntry tokenName="USDT" balance="0" goal="0" rewards="0" image={USDT}/>
-                            <BankEntry tokenName="USDC" balance="0" goal="0" rewards="0" image={USDC}/>
-                            <BankEntry tokenName="DAI" balance="0" goal="0" rewards="0" image={DAI}/>
-                            <BankEntry tokenName="TUSD" balance="0" goal="0" rewards="0" image={TUSD}/>
-                        </tbody>
+                        {address !== "" && (<tbody>
+                            <BankEntry address={address} tokenName="PGY" image={USDT}/>
+                            <BankEntry address={address} tokenName="USDT" image={USDT}/>
+                            <BankEntry address={address} tokenName="USDC" image={USDC}/>
+                            <BankEntry address={address} tokenName="DAI" image={DAI}/>
+                            <BankEntry address={address} tokenName="TUSD" image={TUSD}/>
+                        </tbody>)}
+
                     </table>
                 </div>
             </div>
