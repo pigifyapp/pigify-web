@@ -54,11 +54,11 @@ export default function Navbar({ isSaving, handleSavingButton }) {
                         </a>
 
                         <div className="navbar-item">
-                            {isSaving && <a href="#" className="button">
+                            {!isSaving && <a href="#" className="button">
                                 <strong>Presale</strong>
                             </a>}
 
-                            {!isSaving && <a onClick={handleSavingButton} href="#" className="button is-danger">
+                            {isSaving && <a onClick={handleSavingButton} href="#" className="button is-danger">
                                 <strong>Log out</strong>
                             </a>}
                         </div>
