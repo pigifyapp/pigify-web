@@ -41,7 +41,7 @@ const BankEntry = function({address, tokenName, image}) {
         console.log(pigify.methods);
 
         if(method) {
-            const goalWithDecimals = await method.call();
+            const goalWithDecimals = await method(address).call();
             const goalWithoutDecimals = goalWithDecimals / Math.pow(10, 18)
 
             setGoal(goalWithoutDecimals);
