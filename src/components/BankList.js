@@ -7,6 +7,7 @@ import DAI from "../images/DAI.png";
 import TUSD from "../images/TrueUSD.jpeg";
 import web3 from "../web3/web3";
 import {useEffect, useState} from "react";
+import pigify from "../web3/pigify";
 
 export default function BankList() {
     const [address, setAddress] = useState("");
@@ -42,11 +43,9 @@ export default function BankList() {
                         </thead>
 
                         {address !== "" && (<tbody>
-                            <BankEntry address={address} tokenName="PGY" image={USDT}/>
-                            <BankEntry address={address} tokenName="USDT" image={USDT}/>
-                            <BankEntry address={address} tokenName="USDC" image={USDC}/>
-                            <BankEntry address={address} tokenName="DAI" image={DAI}/>
-                            <BankEntry address={address} tokenName="TUSD" image={TUSD}/>
+                            <BankEntry tokenInternalId={0} tokenAddress={pigify.options.address} decimals={18} address={address} tokenName="PGY" image={USDT}/>
+                            <BankEntry tokenInternalId={1} tokenAddress={"0x5AB6F31B29Fc2021436B3Be57dE83Ead3286fdc7"} decimals={18} address={address} tokenName="USDT" image={USDT}/>
+                            <BankEntry tokenInternalId={2} tokenAddress={"0x466595626333c55fa7d7Ad6265D46bA5fDbBDd99"} decimals={18} address={address} tokenName="USDC" image={USDC}/>
                         </tbody>)}
 
                     </table>

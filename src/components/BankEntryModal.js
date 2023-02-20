@@ -1,4 +1,4 @@
-export default function BankEntryModal({ children, isActive, image, title, close, balance, tokenName, goal, rewards}) {
+export default function BankEntryModal({ handleSubmit, isLoading, children, isActive, image, title, close, balance, tokenName, goal, rewards}) {
     return (
         <div className={"modal" + (isActive ? " is-active" : "")}>
             <div className="modal-background" onClick={close}></div>
@@ -28,7 +28,7 @@ export default function BankEntryModal({ children, isActive, image, title, close
                     { children }
                 </section>
                 <footer className="modal-card-foot">
-                    <button className="button is-danger">{title}</button>
+                    <button className={"button is-danger" + (isLoading ? " is-loading" : "")} onClick={handleSubmit}>{title}</button>
                     <button className="button" onClick={close}>Cancel</button>
                 </footer>
             </div>

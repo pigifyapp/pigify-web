@@ -1,6 +1,6 @@
 import abi from "./abi.json";
 import web3 from "./web3";
 
-const contract = new web3.eth.Contract(abi, "0x52a431B6CF188Ef00E99F3e049B30c06D0324165");
+const contract = new web3.eth.Contract(abi, "0xD66EBBCA76fB35C39289DfA8f2D15E7BB1360868");
 
 export default contract;
