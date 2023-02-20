@@ -116,6 +116,8 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
 
                 setIsDepositing(false);
                 setDepositMessage("Deposit completed.");
+
+                await fetchEverything();
             } catch(e) {
                 setIsDepositing(false);
                 setDepositMessage(e.message);
