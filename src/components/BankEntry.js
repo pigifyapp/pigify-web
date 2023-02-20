@@ -17,8 +17,9 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
     const [isDepositing, setIsDepositing] = useState(false);
     const [depositMessage, setDepositMessage] = useState("");
 
-
     const [goalInputValue, setGoalInputValue] = useState(0);
+    const [isSettingGoal, setIsSettingGoal] = useState(false);
+    const [goalModalMessage, setGoalModalMessage] = useState("");
 
     useEffect(() => {
         fetchEverything();
@@ -146,6 +147,31 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
         setGoalInputValue(event.target.value);
     }
 
+    async function sendGoal() {
+        const goal = web3.utils.toBN(goalInputValue).mul(
+            web3.utils.toBN(10**18)
+        );
+
+        setIsSettingGoal(true);
+
+        try {
+            await pigify.methods.establishGoal(tokenInternalId, goal).send({
+                from: address
+            });
+
+            setIsSettingGoal(false);
+            setGoalModalMessage("Successfully updated goal");
+
+            await fetchEverything();
+        } catch(e) {
+            setGoalModalMessage(e.message);
+            setIsSettingGoal(false);
+
+            console.log("sendGoal() error:")
+            console.log(e);
+        }
+    }
+
     return (
         <tr>
             <td className="has-text-centered"><img src={image} alt="Token" width="18px" height="18px"/></td>
@@ -168,13 +194,14 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
                 <input className="input" type="number" defaultValue="1" />
             </BankEntryModal>
 
-            <BankEntryModal isActive={isGoalModalOpen} title="Set goal" close={closeGoalModal} image={image} balance={balance} tokenName={tokenName} goal={goal} rewards={rewards}>
+            <BankEntryModal handleSubmit={sendGoal} isLoading={isSettingGoal} isActive={isGoalModalOpen} title="Set goal" close={closeGoalModal} image={image} balance={balance} tokenName={tokenName} goal={goal} rewards={rewards}>
                 <p className="subtitle">
                     <span style={{ color: "red" }}><i className="fa-solid fa-triangle-exclamation"></i> </span>
                     Be careful, once you set a goal you won't be able to withdraw your money until you save enough tokens.
                 </p>
                 <p className="subtitle">How much do you want to set as goal?</p>
                 <input className="input" onChange={handleGoalChange} type="number" defaultValue={goalInputValue} />
+                {goalModalMessage !== "" && <p>{goalModalMessage}</p>}
             </BankEntryModal>
         </tr>
     );
