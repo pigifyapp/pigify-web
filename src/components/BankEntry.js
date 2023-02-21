@@ -11,7 +11,7 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
 
     const [balance, setBalance] = useState(0);
     const [goal, setGoal] = useState(0);
-    const [rewards, setRewards] = useState(0);
+    const [rewards] = useState(0);
 
     const [depositInputValue, setDepositInputValue] = useState(0);
     const [isDepositing, setIsDepositing] = useState(false);
