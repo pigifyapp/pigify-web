@@ -3,8 +3,6 @@ import StakingCard from "./StakingCard";
 import "bulma-list/css/bulma-list.css";
 import USDC from "../images/USDC.png";
 import USDT from "../images/USDT.png";
-import DAI from "../images/DAI.png";
-import TUSD from "../images/TrueUSD.jpeg";
 import web3 from "../web3/web3";
 import {useEffect, useState} from "react";
 import pigify from "../web3/pigify";
