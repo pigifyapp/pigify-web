@@ -1,7 +1,7 @@
 export default function Navbar({ isSaving, handleSavingButton }) {
     return (
-        <div className="container">
-            <nav className="navbar" role="navigation" aria-label="main navigation">
+        <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+            <div className="container">
                 <div className="navbar-brand">
                     <a className="navbar-item" href="#">
                         <span className="title is-pink">
@@ -26,7 +26,7 @@ export default function Navbar({ isSaving, handleSavingButton }) {
                                 <i className="fas fa-book"></i>
                             </span>
 
-                            <span> Documentation </span>
+                            <span className="navbar-text"> Documentation </span>
                         </a>
 
                         <a href="#whitepaper" className="navbar-item">
@@ -34,7 +34,7 @@ export default function Navbar({ isSaving, handleSavingButton }) {
                                 <i className="fa-solid fa-paperclip"></i>
                             </span>
 
-                            <span> Whitepaper </span>
+                            <span className="navbar-text"> Whitepaper </span>
                         </a>
 
                         <a href="#roadmap" className="navbar-item">
@@ -42,7 +42,7 @@ export default function Navbar({ isSaving, handleSavingButton }) {
                                 <i className="fas fa-shoe-prints"></i>
                             </span>
 
-                            <span> Roadmap </span>
+                            <span className="navbar-text"> Roadmap </span>
                         </a>
 
                         <a href="#tokenomics" className="navbar-item">
@@ -50,21 +50,21 @@ export default function Navbar({ isSaving, handleSavingButton }) {
                                 <i className="fa-solid fa-bolt"></i>
                             </span>
 
-                            <span> Tokenomics </span>
+                            <span className="navbar-text"> Tokenomics </span>
                         </a>
 
                         <div className="navbar-item">
-                            {!isSaving && <a href="#" className="button">
+                            {!isSaving && <a href="#" className="button is-danger">
                                 <strong>Presale</strong>
                             </a>}
 
                             {isSaving && <a onClick={handleSavingButton} href="#" className="button is-danger">
-                                <strong>Log out</strong>
+                                <strong>Disconnect</strong>
                             </a>}
                         </div>
                     </div>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     );
 }

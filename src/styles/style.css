@@ -3,6 +3,11 @@
     color: white;
 }
 
+.navbar {
+    background-color: transparent;
+    background-image: none;
+}
+
 .whitepaper-icon {
     color: #009FB7;
 }
@@ -12,7 +17,6 @@
 }
 
 .navbar {
-    margin-top: 10px;
     margin-bottom: 10px;
 }
 
@@ -36,13 +40,50 @@
     color: #ffc300;
 }
 
-.roadmap-container {
+.pink-container {
     border-radius: 10px;
     background: linear-gradient(110deg, #ffc8dd 50%, #ffafcc 50%);
 }
 
 .roadmap-title {
-    color: white;
+    color: #f14668;
+    font-size: 40px;
+}
+
+.mainhero-title {
+    color: black;
     font-weight: bolder;
-    letter-spacing: 0.3rem;
+    font-size: 40px;
+}
+
+.mainhero-subtitle {
+    font-size: 22px;
+    color: black;
+}
+
+.mainhero-button {
+    font-size: 19px;
+}
+
+.navbar-text{
+    color: black;
+    font-weight: bolder;
+}
+
+.table {
+    background: none;
+}
+
+.doughnut-column {
+    background-color: #0096c7;
+    border-radius: 30px;
+}
+
+.tokenomics-columns {
+    background: #eaf4f4;
+    border-radius: 30px;
+}
+
+.title-column {
+    background: red;
 }
