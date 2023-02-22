@@ -25,7 +25,7 @@
 }
 
 .is-pink {
-    color: #DA4167;
+    color: white;
 }
 
 .is-pink-button {
@@ -62,12 +62,22 @@
 }
 
 .mainhero-button {
+    font-weight: 500;
     font-size: 19px;
 }
 
+.is-danger {
+    border: 1px solid !important;
+}
+
+.navbar {
+    padding:0.4rem 0;
+    background: rgba(218, 65, 103, 0.9);
+}
+
 .navbar-text{
-    color: black;
-    font-weight: bolder;
+    color: white;
+    font-weight: 500;
 }
 
 .table {
@@ -86,4 +96,22 @@
 
 .title-column {
     background: red;
+}
+
+.presale-button {
+    color: #c23458 !important;
+}
+
+.bank-table {
+    background-color: #ffc8dd;
+    border: 3px solid #ffafcc;
+    border-radius: 20px;
+}
+
+.navbar-item:hover {
+    background-color: #a31b3d !important;
+}
+
+.navbar-item:focus {
+    background-color: #a31b3d !important;
 }

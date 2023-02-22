@@ -54,7 +54,7 @@ export default function Navbar({ isSaving, handleSavingButton }) {
                         </a>
 
                         <div className="navbar-item">
-                            {!isSaving && <a href="#" className="button is-danger">
+                            {!isSaving && <a href="#" className="button presale-button is-white">
                                 <strong>Presale</strong>
                             </a>}
 

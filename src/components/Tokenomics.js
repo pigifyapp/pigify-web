@@ -68,9 +68,9 @@ export default function Tokenomics() {
                                 </thead>
 
                                 <tbody>
-                                <TokenomicTableEntry name="Rewards" percentage="42" description="Reserved for stakeholder rewards"/>
+                                <TokenomicTableEntry name="Rewards" percentage="42" description="Reserved for incentives and stakeholder rewards"/>
                                 <TokenomicTableEntry name="Development" percentage="11" description="Used to pay for personal, software, marketing, etc"/>
-                                <TokenomicTableEntry name="Ecosystem" percentage="10" description="Used to provide liquidity and promote the project in the BSC ecosystem"/>
+                                <TokenomicTableEntry name="Ecosystem" percentage="10" description="Used to provide liquidity and promote the project"/>
                                 <TokenomicTableEntry name="Team" percentage="19" description="Assigned to the founding members of the project"/>
                                 <TokenomicTableEntry name="Presale" percentage="8" description="Used to finance the project through an ICO, IDO or other sales"/>
                                 <TokenomicTableEntry name="Treasury" percentage="5" description="Funds available for the project"/>
