@@ -20,11 +20,8 @@ export default function BankList() {
     }, []);
 
     return (
-        <section className="hero hero-section is-fullheight-with-navbar">
+        <section className="hero hero-section is-fullheight">
             <div className="hero-body columns">
-                <div className="column">
-                    <StakingCard />
-                </div>
                 <div className="column">
                     <table className="table mx-auto">
                         <thead>
@@ -33,7 +30,7 @@ export default function BankList() {
                             <th>Token</th>
                             <th>Balance</th>
                             <th>Goal</th>
-                            <th>Reward</th>
+                            <th>Deposit fee</th>
                             <th></th>
                             <th></th>
                             <th></th>
