@@ -11,7 +11,7 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
 
     const [balance, setBalance] = useState(0);
     const [goal, setGoal] = useState(0);
-    const [rewards] = useState(0);
+    const [depositFee, setDepositFee] = useState(0);
 
     const [depositInputValue, setDepositInputValue] = useState(0);
     const [isDepositing, setIsDepositing] = useState(false);
@@ -21,6 +21,9 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
     const [isSettingGoal, setIsSettingGoal] = useState(false);
     const [goalModalMessage, setGoalModalMessage] = useState("");
 
+    const [isWithdrawing, setIsWithdrawing] = useState(false);
+    const [withdrawMessage, setWithdrawMessage] = useState("");
+
     useEffect(() => {
         fetchEverything();
     }, [])
@@ -29,6 +32,7 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
         try {
             await fetchTokenBalance();
             await fetchTokenGoal();
+            await fetchDepositFee();
         } catch(e) {
             console.log(e);
         }
@@ -57,6 +61,20 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
         } else {
             setGoal(-1);
         }
+    }
+
+    async function fetchDepositFee() {
+        const getTokenDepositFee = pigify.methods["getTokenDepositFee"];
+
+        const depositFeeWithDecimals = web3.utils.toBN(
+            await getTokenDepositFee(tokenInternalId).call()
+        );
+
+        const depositFeeWithoutDecimals = depositFeeWithDecimals.div(
+            web3.utils.toBN(10 ** decimals)
+        );
+
+        setDepositFee(depositFeeWithoutDecimals.toNumber());
     }
 
     function openDepositModal() {
@@ -172,34 +190,57 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
         }
     }
 
+    async function withdraw() {
+        setIsWithdrawing(true);
+
+        try {
+            await pigify.methods.withdrawToken(tokenInternalId).send({
+                from: address
+            });
+
+            setWithdrawMessage("You successfully withdrew your tokens.")
+
+            setIsWithdrawing(false);
+
+            await fetchEverything();
+        } catch(e) {
+            console.log("withdraw() error:")
+            console.log(e);
+
+            setWithdrawMessage(e.message);
+
+            setIsWithdrawing(false);
+        }
+    }
+
     return (
         <tr>
             <td className="has-text-centered"><img src={image} alt="Token" width="18px" height="18px"/></td>
             <td>{tokenName}</td>
             <td>{balance.toLocaleString("en-US")}</td>
             <td>{goal.toLocaleString("en-US")}</td>
-            <td>{rewards.toLocaleString("en-US")} PGY</td>
+            <td>{depositFee.toLocaleString("en-US")} {tokenName}</td>
             <td><a onClick={openDepositModal}>Deposit</a></td>
             <td><a onClick={openWithdrawModal}>Withdraw</a></td>
             <td><a onClick={openGoalModal}>Set goal</a></td>
 
-            <BankEntryModal handleSubmit={deposit} isLoading={isDepositing} isActive={isDepositModalOpen} title="Deposit" close={closeDepositModal} image={image} balance={balance} tokenName={tokenName} goal={goal} rewards={rewards}>
-                <p className="subtitle">How much would you like to deposit?</p>
+            <BankEntryModal handleSubmit={deposit} isLoading={isDepositing} isActive={isDepositModalOpen} title="Deposit" close={closeDepositModal} image={image} balance={balance} tokenName={tokenName} goal={goal} depositFee={depositFee}>
+                <p className="subtitle">How many tokens would you like to deposit?</p>
                 <input className="input" onChange={handleDepositChange} type="number" defaultValue={depositInputValue} />
                 {depositMessage !== "" && <p>{depositMessage}</p>}
             </BankEntryModal>
 
-            <BankEntryModal isActive={isWithdrawModalOpen} title="Withdraw" close={closeWithdrawModal} image={image} balance={balance} tokenName={tokenName} goal={goal} rewards={rewards}>
-                <p className="subtitle">How much would you like to withdraw?</p>
-                <input className="input" type="number" defaultValue="1" />
+            <BankEntryModal handleSubmit={withdraw} isLoading={isWithdrawing} isActive={isWithdrawModalOpen} title="Withdraw" close={closeWithdrawModal} image={image} balance={balance} tokenName={tokenName} goal={goal} depositFee={depositFee}>
+                <p className="subtitle">Do you want to withdraw all of your tokens?</p>
+                {withdrawMessage !== "" && <p>{withdrawMessage}</p>}
             </BankEntryModal>
 
-            <BankEntryModal handleSubmit={sendGoal} isLoading={isSettingGoal} isActive={isGoalModalOpen} title="Set goal" close={closeGoalModal} image={image} balance={balance} tokenName={tokenName} goal={goal} rewards={rewards}>
+            <BankEntryModal handleSubmit={sendGoal} isLoading={isSettingGoal} isActive={isGoalModalOpen} title="Set goal" close={closeGoalModal} image={image} balance={balance} tokenName={tokenName} goal={goal} depositFee={depositFee}>
                 <p className="subtitle">
                     <span style={{ color: "red" }}><i className="fa-solid fa-triangle-exclamation"></i> </span>
-                    Be careful, once you set a goal you won't be able to withdraw your money until you save enough tokens.
+                    Be careful, if you set a goal you won't be able to withdraw your tokens until you reach that goal.
                 </p>
-                <p className="subtitle">How much do you want to set as goal?</p>
+                <p className="subtitle">How many tokens do you want to set as goal?</p>
                 <input className="input" onChange={handleGoalChange} type="number" defaultValue={goalInputValue} />
                 {goalModalMessage !== "" && <p>{goalModalMessage}</p>}
             </BankEntryModal>

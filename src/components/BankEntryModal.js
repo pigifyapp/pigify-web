@@ -1,4 +1,4 @@
-export default function BankEntryModal({ handleSubmit, isLoading, children, isActive, image, title, close, balance, tokenName, goal, rewards}) {
+export default function BankEntryModal({ handleSubmit, isLoading, children, isActive, image, title, close, balance, tokenName, goal, depositFee}) {
     return (
         <div className={"modal" + (isActive ? " is-active" : "")}>
             <div className="modal-background" onClick={close}></div>
@@ -21,7 +21,7 @@ export default function BankEntryModal({ handleSubmit, isLoading, children, isAc
                         </div>
 
                         <div className="column">
-                            <p className="subtitle">Rewards: {rewards} PGY</p>
+                            <p className="subtitle">Deposit fee: {depositFee} {tokenName}</p>
                         </div>
                     </div>
 
