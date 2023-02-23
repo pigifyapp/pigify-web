@@ -1,9 +1,11 @@
-export default function Navbar({ isSaving, handleSavingButton }) {
+import {Link} from "react-router-dom";
+
+export default function Navbar() {
     return (
         <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
             <div className="container">
                 <div className="navbar-brand">
-                    <a className="navbar-item" href="#">
+                    <a className="navbar-item" href="src/components#">
                         <span className="title is-pink">
                             <i className="fa-solid fa-piggy-bank"></i>
 
@@ -21,15 +23,7 @@ export default function Navbar({ isSaving, handleSavingButton }) {
 
                 <div id="navbarBasicExample" className="navbar-menu">
                     <div className="navbar-end">
-                        <a href="#home" className="navbar-item">
-                            <span className="icon">
-                                <i className="fas fa-book"></i>
-                            </span>
-
-                            <span className="navbar-text"> Documentation </span>
-                        </a>
-
-                        <a href="#whitepaper" className="navbar-item">
+                        <a href="https://pigify.gitbook.io/introduction/" target="_blank" className="navbar-item">
                             <span className="icon whitepaper-icon">
                                 <i className="fa-solid fa-paperclip"></i>
                             </span>
@@ -37,7 +31,7 @@ export default function Navbar({ isSaving, handleSavingButton }) {
                             <span className="navbar-text"> Whitepaper </span>
                         </a>
 
-                        <a href="#roadmap" className="navbar-item">
+                        <a href="src/components#roadmap" className="navbar-item">
                             <span className="icon has-text-expo">
                                 <i className="fas fa-shoe-prints"></i>
                             </span>
@@ -45,7 +39,7 @@ export default function Navbar({ isSaving, handleSavingButton }) {
                             <span className="navbar-text"> Roadmap </span>
                         </a>
 
-                        <a href="#tokenomics" className="navbar-item">
+                        <a href="src/components#tokenomics" className="navbar-item">
                             <span className="icon is-yellow">
                                 <i className="fa-solid fa-bolt"></i>
                             </span>
@@ -54,13 +48,9 @@ export default function Navbar({ isSaving, handleSavingButton }) {
                         </a>
 
                         <div className="navbar-item">
-                            {!isSaving && <a href="#" className="button presale-button is-white">
-                                <strong>Presale</strong>
-                            </a>}
-
-                            {isSaving && <a onClick={handleSavingButton} href="#" className="button is-danger">
+                            <Link to="/home" className="button presale-button is-white">
                                 <strong>Disconnect</strong>
-                            </a>}
+                            </Link>
                         </div>
                     </div>
                 </div>

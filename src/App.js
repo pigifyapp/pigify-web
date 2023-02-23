@@ -1,28 +1,16 @@
-import Navbar from "./components/Navbar";
-import Roadmap from "./components/Roadmap";
-import Tokenomics from "./components/Tokenomics";
-import {useState} from "react";
-import MainHero from "./components/MainHero";
-import BankList from "./components/BankList";
+import {Route, Routes} from "react-router-dom";
+import Home from "./routes/Home";
+import Dashboard from "./routes/Dashboard";
 
 export default function App() {
-    const [isSaving, setIsSaving] = useState(false);
-
-    const handleSavingButton = function() {
-        setIsSaving(!isSaving);
-    };
-
     return (
         <div>
-            <Navbar isSaving={isSaving} handleSavingButton={handleSavingButton} />
+            <Routes>
+                <Route index element={<Home />} />
 
-            {!isSaving && <div>
-                <MainHero handleSavingButton={handleSavingButton} />
-                <Tokenomics />
-                <Roadmap />
-            </div>}
-
-            {isSaving && <BankList />}
+                <Route path="home" element={<Home />} />
+                <Route path="dashboard" element={<Dashboard />} />
+            </Routes>
 
         </div>
     );

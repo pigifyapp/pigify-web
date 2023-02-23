@@ -17,28 +17,26 @@ export default function Roadmap() {
                 <div className="columns is-centered py-1">
                     <div className="column">
                         <div className="steps">
-                            <div className="step-item is-completed is-success">
-                                <div className="step-marker">
-                                <span className="icon">
-                                    <i className="fa fa-check"></i>
-                                </span>
-                                </div>
+                            <div className="step-item is-active">
+                                <div className="step-marker">1</div>
                                 <div className="step-details">
                                     <p className="step-title">Q1 2023</p>
                                     <ul>
                                         <li><del>Tokenomics</del></li>
-                                        <li>Whitepaper</li>
+                                        <li><del>Whitepaper</del></li>
+                                        <li><del>Decentralized Savings</del></li>
                                         <li>Presale</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div className="step-item is-active">
+                            <div className="step-item">
                                 <div className="step-marker">2</div>
                                 <div className="step-details">
                                     <p className="step-title">Q2 2023</p>
                                     <ul>
-                                        <li>Forced saving</li>
-                                        <li>Public release</li>
+                                        <li>Staking</li>
+                                        <li>Save-to-Earn</li>
+                                        <li>Public Release</li>
                                         <li>Marketing</li>
                                     </ul>
                                 </div>
@@ -48,9 +46,10 @@ export default function Roadmap() {
                                 <div className="step-details">
                                     <p className="step-title">Q3 2024</p>
                                     <ul>
-                                        <li>Save-to-Earn</li>
-                                        <li>Mobile app launch</li>
+                                        <li>Mobile App</li>
+                                        <li>Affiliate Program</li>
                                         <li>Marketing</li>
+                                        <li>Buy PGY from our app</li>
                                     </ul>
                                 </div>
                             </div>
@@ -63,8 +62,8 @@ export default function Roadmap() {
                                 <div className="step-details">
                                     <p className="step-title">Q4 2023</p>
                                     <ul>
-                                        <li>Mobile app</li>
-                                        <li>Marketing campaign</li>
+                                        <li>Launch in more networks</li>
+                                        <li>Marketing</li>
                                     </ul>
                                 </div>
                             </div>

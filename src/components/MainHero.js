@@ -1,6 +1,20 @@
 import savingImage from "../images/saving.jpg";
+import {Link, useNavigate} from "react-router-dom";
 
-export default function MainHero({ handleSavingButton }) {
+export default function MainHero() {
+    const navigate = useNavigate();
+
+    async function requestMetamask() {
+        try {
+            await window.ethereum.request({ method: "eth_requestAccounts" });
+            navigate("/dashboard");
+
+            console.log("Metamask accepted, nice");
+        } catch(e) {
+            console.log("Metamask not installed?");
+        }
+    }
+
     return (
         <section className="hero hero-section is-fullheight">
             <div className="hero-body columns">
@@ -13,7 +27,7 @@ export default function MainHero({ handleSavingButton }) {
                         Pigify is a <strong>decentralized</strong> saving platform that will <strong>force you</strong> to save and <strong>achieve</strong> your <strong>financial goals</strong>.
                     </p>
 
-                    <button className="button is-danger mt-3 mainhero-button" onClick={handleSavingButton}>Start Saving</button>
+                    <Link to="/dashboard" className="button is-danger mt-3 mainhero-button" onClick={requestMetamask}>Start Saving</Link>
                 </div>
 
                 <div className="column">

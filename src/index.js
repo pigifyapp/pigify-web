@@ -4,10 +4,11 @@ import App from "./App";
 
 import "bulma/css/bulma.min.css";
 import "./styles/style.css"
+import {BrowserRouter} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <BrowserRouter>
     <App />
-  </React.StrictMode>
+  </BrowserRouter>
 );

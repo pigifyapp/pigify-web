@@ -1,8 +1,8 @@
 import {useEffect, useState} from "react";
 import BankEntryModal from "./BankEntryModal";
-import pigify from "../web3/pigify";
-import web3 from "../web3/web3";
 import erc20 from "../web3/erc20";
+import web3 from "../web3/web3";
+import {pigifyContract} from "../web3/pigify";
 
 const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, tokenName, image}) {
     const [isDepositModalOpen, setDepositModalOpen] = useState(false);
@@ -40,7 +40,7 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
 
     async function fetchTokenBalance() {
         try {
-            const balanceWithDecimals = web3.utils.toBN(await pigify.methods.readBalance(tokenInternalId, address).call());
+            const balanceWithDecimals = web3.utils.toBN(await pigifyContract.methods.readBalance(tokenInternalId, address).call());
             const balanceWithoutDecimals = balanceWithDecimals.div(web3.utils.toBN(10 ** decimals));
 
             setBalance(balanceWithoutDecimals.toNumber());
@@ -51,7 +51,7 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
     }
 
     async function fetchTokenGoal() {
-        const method = pigify.methods["readGoal"];
+        const method = pigifyContract.methods["readGoal"];
 
         if(method) {
             const goalWithDecimals = web3.utils.toBN(await method(tokenInternalId, address).call());
@@ -64,7 +64,7 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
     }
 
     async function fetchDepositFee() {
-        const getTokenDepositFee = pigify.methods["getTokenDepositFee"];
+        const getTokenDepositFee = pigifyContract.methods["getTokenDepositFee"];
 
         const depositFeeWithDecimals = web3.utils.toBN(
             await getTokenDepositFee(tokenInternalId).call()
@@ -98,7 +98,7 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
 
         try {
             setIsDepositing(true);
-            await tokenContract.methods.approve(pigify.options.address, amount).send({
+            await tokenContract.methods.approve(pigifyContract.options.address, amount).send({
                 from: address
             });
             console.log("Successfully approved deposit of " + depositAmount + " " + tokenName);
@@ -123,7 +123,7 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
 
         const amount = web3.utils.toBN(depositInputValue * 10 ** decimals);
 
-        const method = pigify.methods["depositToken"];
+        const method = pigifyContract.methods["depositToken"];
 
         if(method) {
             setIsDepositing(true);
@@ -173,7 +173,7 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
         setIsSettingGoal(true);
 
         try {
-            await pigify.methods.establishGoal(tokenInternalId, goal).send({
+            await pigifyContract.methods.establishGoal(tokenInternalId, goal).send({
                 from: address
             });
 
@@ -194,7 +194,7 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
         setIsWithdrawing(true);
 
         try {
-            await pigify.methods.withdrawToken(tokenInternalId).send({
+            await pigifyContract.methods.withdrawToken(tokenInternalId).send({
                 from: address
             });
 
