@@ -11,7 +11,9 @@ export default function Dashboard() {
     const [address, setAddress] = useState("");
 
     async function fetchAddress() {
-        const accounts = await web3.eth.getAccounts();
+        const accounts = await web3.eth.requestAccounts();
+
+        console.log(accounts);
 
         setAddress(accounts[0]);
     }
