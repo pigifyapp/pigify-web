@@ -115,3 +115,7 @@
 .navbar-item:focus {
     background-color: #a31b3d !important;
 }
+
+footer {
+    background-color: rgba(218, 65, 103, 0.6);
+}
