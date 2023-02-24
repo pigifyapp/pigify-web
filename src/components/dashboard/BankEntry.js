@@ -226,7 +226,7 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
 
             <BankEntryModal handleSubmit={deposit} isLoading={isDepositing} isActive={isDepositModalOpen} title="Deposit" close={closeDepositModal} image={image} balance={balance} tokenName={tokenName} goal={goal} depositFee={depositFee}>
                 <p className="subtitle">How many tokens would you like to deposit?</p>
-                <input className="input" onChange={handleDepositChange} type="number" defaultValue={depositInputValue} />
+                <input className="input" onChange={handleDepositChange} type="number" min="2" defaultValue={depositInputValue} />
                 {depositMessage !== "" && <p>{depositMessage}</p>}
             </BankEntryModal>
 
@@ -241,7 +241,7 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
                     Be careful, if you set a goal you won't be able to withdraw your tokens until you reach that goal.
                 </p>
                 <p className="subtitle">How many tokens do you want to set as goal?</p>
-                <input className="input" onChange={handleGoalChange} type="number" defaultValue={goalInputValue} />
+                <input className="input" onChange={handleGoalChange} type="number" min="2" defaultValue={goalInputValue} />
                 {goalModalMessage !== "" && <p>{goalModalMessage}</p>}
             </BankEntryModal>
         </tr>
