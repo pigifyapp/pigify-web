@@ -2,38 +2,122 @@ import savingImage from "../../images/saving.jpg";
 import {useNavigate} from "react-router-dom";
 import {useState} from "react";
 import MetamaskModal from "./MetamaskModal";
+import web3 from "../../web3/web3";
 
 export default function Hero() {
     const [isLoading, setLoading] = useState(false)
     const [isMetamaskModalOpen, setMetamaskModalOpen] = useState(false);
     const navigate = useNavigate();
 
-    async function requestMetamask() {
+    function getWalletNetworkDetails() {
+        const isTesting = false;
+
+        if(isTesting || process.env.IS_TESTING) {
+            return {
+                desiredId: 97,
+                network: {
+                    chainId: web3.utils.toHex(97),
+                    chainName: "BSC Testnet",
+                    nativeCurrency: {
+                        name: "BNB",
+                        symbol: "BNB",
+                        decimals: 18
+                    },
+                    rpcUrls: ["https://data-seed-prebsc-2-s2.binance.org:8545"],
+                    blockExplorerUrls:["https://testnet.bscscan.com/"]
+                }
+            };
+        }
+
+        return {
+            desiredId: 56,
+            network: {
+                chainId: web3.utils.toHex(56),
+                chainName: "BNB Smart Chain Mainnet",
+                nativeCurrency: {
+                    name: "BNB",
+                    symbol: "BNB",
+                    decimals: 18
+                },
+                rpcUrls: ["https://bsc-dataseed3.binance.org/"],
+                blockExplorerUrls:["https://bscscan.com"]
+            }
+        };
+    }
+
+    async function handleAppLaunch() {
         if(!window.ethereum) {
             setMetamaskModalOpen(true);
             return;
         }
 
         try {
-            setLoading(true);
+            await connectWallet();
+            await verifyWalletNetwork();
 
-            await window.ethereum.request({ method: "eth_requestAccounts" })
-                .then((result) => {
-                    console.log("Metamask accepted, nice");
-                    console.log(result);
-
-                    navigate("/dashboard");
-
-                    setLoading(false);
-                })
-                .catch((error) => {
-                    console.log("Error");
-                    console.log(error);
-
-                    setLoading(false)
-                });
+            navigate("/dashboard");
         } catch(e) {
-            console.log("Metamask not installed?");
+            console.log("Error during app launch!");
+            console.log(e.message);
+        }
+    }
+
+    async function connectWallet() {
+        setLoading(true);
+
+        await window.ethereum.request({ method: "eth_requestAccounts" })
+            .then((result) => {
+                console.log("Metamask accepted, nice");
+                console.log(result);
+
+                setLoading(false);
+            })
+            .catch((error) => {
+                console.log("Error");
+                console.log(error);
+
+                setLoading(false)
+            });
+    }
+
+    async function verifyWalletNetwork() {
+        const chainId = await web3.eth.getChainId();
+
+        const {desiredId, network} = getWalletNetworkDetails();
+
+        console.log("Current chain id: " + chainId);
+
+        if(chainId !== desiredId) {
+            try {
+                await switchWalletNetwork(desiredId);
+                console.log("Successfully switch to chain id " + desiredId);
+            } catch(e) {
+                console.log("Couldn't switch to chain " + desiredId);
+                console.log("Trying to add chain...")
+
+                await addWalletNetwork(network);
+                await switchWalletNetwork(desiredId);
+
+                console.log("Successfully added chain.");
+            }
+        }
+    }
+
+    async function switchWalletNetwork(networkId) {
+        await window.ethereum.request({
+            method:'wallet_switchEthereumChain',
+            params: [{chainId: web3.utils.toHex(networkId)}]
+        })
+    }
+
+    async function addWalletNetwork(network) {
+        try {
+            await window.ethereum.request({
+                method: 'wallet_addEthereumChain',
+                params: [network]
+            });
+        } catch(e) {
+            console.log("Couldn't add network :/ Everything's wrong smh.");
         }
     }
 
@@ -54,7 +138,7 @@ export default function Hero() {
                         Pigify is a <strong>decentralized</strong> saving platform that will <strong>force you</strong> to save and <strong>achieve</strong> your <strong>financial goals</strong>.
                     </p>
 
-                    <a className={"button is-danger mt-3 mainhero-button" + (isLoading ? " is-loading" : "")} onClick={requestMetamask}>Start Saving</a>
+                    <a className={"button is-danger mt-3 mainhero-button" + (isLoading ? " is-loading" : "")} onClick={handleAppLaunch}>Start Saving</a>
                 </div>
 
                 <div className="column">
