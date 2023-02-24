@@ -31,7 +31,7 @@ export default function Navbar() {
                             <span className="navbar-text"> Whitepaper </span>
                         </a>
 
-                        <a href="src/components#roadmap" className="navbar-item">
+                        <a href="#roadmap" className="navbar-item">
                             <span className="icon has-text-expo">
                                 <i className="fas fa-shoe-prints"></i>
                             </span>
@@ -39,7 +39,7 @@ export default function Navbar() {
                             <span className="navbar-text"> Roadmap </span>
                         </a>
 
-                        <a href="src/components#tokenomics" className="navbar-item">
+                        <a href="#tokenomics" className="navbar-item">
                             <span className="icon is-yellow">
                                 <i className="fa-solid fa-bolt"></i>
                             </span>
