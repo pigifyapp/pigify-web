@@ -23,30 +23,6 @@ export default function Navbar() {
 
                 <div id="navbarBasicExample" className="navbar-menu">
                     <div className="navbar-end">
-                        <a href="https://pigify.gitbook.io/introduction/" target="_blank" className="navbar-item">
-                            <span className="icon whitepaper-icon">
-                                <i className="fa-solid fa-paperclip"></i>
-                            </span>
-
-                            <span className="navbar-text"> Whitepaper </span>
-                        </a>
-
-                        <a href="src/components#roadmap" className="navbar-item">
-                            <span className="icon has-text-expo">
-                                <i className="fas fa-shoe-prints"></i>
-                            </span>
-
-                            <span className="navbar-text"> Roadmap </span>
-                        </a>
-
-                        <a href="src/components#tokenomics" className="navbar-item">
-                            <span className="icon is-yellow">
-                                <i className="fa-solid fa-bolt"></i>
-                            </span>
-
-                            <span className="navbar-text"> Tokenomics </span>
-                        </a>
-
                         <div className="navbar-item">
                             <Link to="/home" className="button presale-button is-white">
                                 <strong>Disconnect</strong>

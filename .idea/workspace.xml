@@ -8,16 +8,7 @@
       <change beforePath="$PROJECT_DIR$/../pigify-core/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../pigify-core/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pigify-core/deploy.js" beforeDir="false" afterPath="$PROJECT_DIR$/../pigify-core/deploy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BankEntry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/BankEntry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BankEntryModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/BankEntryModal.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ConnectButton.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainHero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Hero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Roadmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Roadmap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StakingCard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TokenomicTableEntry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/TokenomicTableEntry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Tokenomics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Tokenomics.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/dashboard/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +59,7 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/components/home" />
+      <recent name="$PROJECT_DIR$/src/components/dashboard" />
       <recent name="$PROJECT_DIR$/src/images" />
       <recent name="$PROJECT_DIR$/src/web3" />
     </key>
@@ -106,7 +98,7 @@
       <workItem from="1676770778822" duration="35896000" />
       <workItem from="1676938394043" duration="8776000" />
       <workItem from="1676989132133" duration="31585000" />
-      <workItem from="1677200332375" duration="1436000" />
+      <workItem from="1677200332375" duration="3478000" />
     </task>
     <task id="LOCAL-00001" summary="README: Add testnet address">
       <created>1676041552330</created>
@@ -388,16 +380,34 @@
       <option name="project" value="LOCAL" />
       <updated>1677200998508</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="Better file organization">
+      <created>1677202237385</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1677202237385</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Navbar: Fix anchors to redirecting to the right sections">
+      <created>1677202415665</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1677202415666</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Open modal with instructions to install Metamask if Wallet is not found">
+      <created>1677203252711</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1677203252711</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Add TUSD to the list of tokens that can be saved" />
-    <MESSAGE value="BankEntry: Add set goal button and modal" />
-    <MESSAGE value="Show balance and goal in every bank entry" />
     <MESSAGE value="BankEntry: Fix fetchGoalToken" />
     <MESSAGE value="Add USDC token" />
     <MESSAGE value="New address on goerli testnet" />
@@ -420,6 +430,9 @@
     <MESSAGE value="Add new abi and contract address" />
     <MESSAGE value="Start using react-router" />
     <MESSAGE value="MainHero: Don't redirect until the user lets metamask accept accounts" />
-    <option name="LAST_COMMIT_MESSAGE" value="MainHero: Don't redirect until the user lets metamask accept accounts" />
+    <MESSAGE value="Better file organization" />
+    <MESSAGE value="Navbar: Fix anchors to redirecting to the right sections" />
+    <MESSAGE value="Open modal with instructions to install Metamask if Wallet is not found" />
+    <option name="LAST_COMMIT_MESSAGE" value="Open modal with instructions to install Metamask if Wallet is not found" />
   </component>
 </project>
