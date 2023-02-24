@@ -1,4 +1,4 @@
-import BankEntry from "../components/BankEntry";
+import BankEntry from "../components/dashboard/BankEntry";
 import "bulma-list/css/bulma-list.css";
 import USDC from "../images/USDC.png";
 import USDT from "../images/USDT.png";

@@ -5,24 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7aec8ed4-a412-482f-b961-4b65add8f772" name="Changes" comment="New colors for roadmap gradient">
-      <change afterPath="$PROJECT_DIR$/src/components/dashboard/Navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/Dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/Home.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pigify-core/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../pigify-core/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../pigify-core/deploy.js" beforeDir="false" afterPath="$PROJECT_DIR$/../pigify-core/deploy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BankEntry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/BankEntry.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/BankList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainHero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainHero.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Roadmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Roadmap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web3/pigify.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/web3/pigify.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/web3/web3.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/web3/web3.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BankEntry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/BankEntry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/BankEntryModal.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/BankEntryModal.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ConnectButton.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainHero.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Hero.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Roadmap.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Roadmap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StakingCard.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TokenomicTableEntry.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/TokenomicTableEntry.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Tokenomics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Tokenomics.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/Home.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,22 +44,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/andres/Documents/Development/Pigify/pigify-web/src/web3",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "ts.external.directory.path": "/Users/andres/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/223.8214.51/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/andres/Documents/Development/Pigify/pigify-web/src/web3&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Users/andres/Library/Application Support/JetBrains/Toolbox/apps/WebStorm/ch-0/223.8214.51/WebStorm.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/web3" />
@@ -110,7 +105,8 @@
       <workItem from="1676579111532" duration="26956000" />
       <workItem from="1676770778822" duration="35896000" />
       <workItem from="1676938394043" duration="8776000" />
-      <workItem from="1676989132133" duration="30938000" />
+      <workItem from="1676989132133" duration="31585000" />
+      <workItem from="1677200332375" duration="1436000" />
     </task>
     <task id="LOCAL-00001" summary="README: Add testnet address">
       <created>1676041552330</created>
@@ -378,15 +374,27 @@
       <option name="project" value="LOCAL" />
       <updated>1677039768523</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="Start using react-router">
+      <created>1677154678975</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1677154678975</updated>
+    </task>
+    <task id="LOCAL-00040" summary="MainHero: Don't redirect until the user lets metamask accept accounts">
+      <created>1677200998508</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1677200998508</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Navbar: Fix wrong usage of isSaving state" />
-    <MESSAGE value="Add modals to open deposits/withdraw" />
     <MESSAGE value="Add TUSD to the list of tokens that can be saved" />
     <MESSAGE value="BankEntry: Add set goal button and modal" />
     <MESSAGE value="Show balance and goal in every bank entry" />
@@ -410,6 +418,8 @@
     <MESSAGE value="BankList: Add deposit fee" />
     <MESSAGE value="Some aesthetical changes" />
     <MESSAGE value="Add new abi and contract address" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new abi and contract address" />
+    <MESSAGE value="Start using react-router" />
+    <MESSAGE value="MainHero: Don't redirect until the user lets metamask accept accounts" />
+    <option name="LAST_COMMIT_MESSAGE" value="MainHero: Don't redirect until the user lets metamask accept accounts" />
   </component>
 </project>

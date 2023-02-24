@@ -1,8 +1,8 @@
-import savingImage from "../images/saving.jpg";
-import {Link, useNavigate} from "react-router-dom";
+import savingImage from "../../images/saving.jpg";
+import {useNavigate} from "react-router-dom";
 import {useState} from "react";
 
-export default function MainHero() {
+export default function Hero() {
     const [isLoading, setLoading] = useState(false)
     const navigate = useNavigate();
 

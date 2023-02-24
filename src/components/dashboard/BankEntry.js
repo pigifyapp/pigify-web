@@ -1,8 +1,8 @@
 import {useEffect, useState} from "react";
 import BankEntryModal from "./BankEntryModal";
-import erc20 from "../web3/erc20";
-import web3 from "../web3/web3";
-import {pigifyContract} from "../web3/pigify";
+import erc20 from "../../web3/erc20";
+import web3 from "../../web3/web3";
+import {pigifyContract} from "../../web3/pigify";
 
 const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, tokenName, image}) {
     const [isDepositModalOpen, setDepositModalOpen] = useState(false);
