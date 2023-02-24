@@ -51,6 +51,8 @@ export default function Hero() {
             return;
         }
 
+        setLoading(true);
+
         try {
             await connectWallet();
             await verifyWalletNetwork();
@@ -60,24 +62,12 @@ export default function Hero() {
             console.log("Error during app launch!");
             console.log(e.message);
         }
+
+        setLoading(false);
     }
 
     async function connectWallet() {
-        setLoading(true);
-
-        await window.ethereum.request({ method: "eth_requestAccounts" })
-            .then((result) => {
-                console.log("Metamask accepted, nice");
-                console.log(result);
-
-                setLoading(false);
-            })
-            .catch((error) => {
-                console.log("Error");
-                console.log(error);
-
-                setLoading(false)
-            });
+        await window.ethereum.request({ method: "eth_requestAccounts" });
     }
 
     async function verifyWalletNetwork() {
