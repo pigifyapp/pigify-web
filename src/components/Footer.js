@@ -23,8 +23,8 @@ export default function Footer() {
                     <div className="column">
                         <p className="subtitle"><strong>Contact us</strong></p>
                         <p>
-                            <a href="mailto:andres@hysland.com">
-                                <span style={{ color: "white" }}><i className="fa-solid fa-envelope"></i></span> andres@hysland.com
+                            <a href="mailto:contact@hysland.com">
+                                <span style={{ color: "white" }}><i className="fa-solid fa-envelope"></i></span> contact@hysland.com
                             </a>
                         </p>
 
