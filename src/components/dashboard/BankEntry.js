@@ -92,7 +92,9 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
 
     async function approveDeposit() {
         const depositAmount = depositInputValue;
-        const amount = web3.utils.toBN(depositAmount * 10 ** decimals);
+        const amount = web3.utils.toBN(depositAmount).mul(
+            web3.utils.toBN(10 ** decimals)
+        );
 
         const tokenContract = erc20(tokenAddress);
 
@@ -121,7 +123,9 @@ const BankEntry = function({tokenAddress, tokenInternalId, decimals, address, to
 
         setIsDepositing(true);
 
-        const amount = web3.utils.toBN(depositInputValue * 10 ** decimals);
+        const amount = web3.utils.toBN(depositInputValue).mul(
+            web3.utils.toBN(10 ** decimals)
+        );
 
         const method = pigifyContract.methods["depositToken"];
 
