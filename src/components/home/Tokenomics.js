@@ -11,7 +11,7 @@ const data = {
     datasets: [
         {
             label: "% of total supply",
-            data: [19, 11, 8, 10, 5, 5, 32],
+            data: [19, 11, 8, 10, 5, 5, 42],
             backgroundColor: [
                 'rgba(255, 99, 132, 1)',
                 'rgba(54, 162, 235, 1)',
