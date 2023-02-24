@@ -1,15 +1,35 @@
 import savingImage from "../images/saving.jpg";
 import {Link, useNavigate} from "react-router-dom";
+import {useState} from "react";
 
 export default function MainHero() {
+    const [isLoading, setLoading] = useState(false)
     const navigate = useNavigate();
 
     async function requestMetamask() {
-        try {
-            await window.ethereum.request({ method: "eth_requestAccounts" });
-            navigate("/dashboard");
+        if(!window.ethereum) {
+            // open modal explaining that you need metamask or other wallet to use in order to use Pigify
+            return;
+        }
 
-            console.log("Metamask accepted, nice");
+        try {
+            setLoading(true);
+
+            await window.ethereum.request({ method: "eth_requestAccounts" })
+                .then((result) => {
+                    console.log("Metamask accepted, nice");
+                    console.log(result);
+
+                    navigate("/dashboard");
+
+                    setLoading(false);
+                })
+                .catch((error) => {
+                    console.log("Error");
+                    console.log(error);
+
+                    setLoading(false)
+                });
         } catch(e) {
             console.log("Metamask not installed?");
         }
@@ -27,7 +47,7 @@ export default function MainHero() {
                         Pigify is a <strong>decentralized</strong> saving platform that will <strong>force you</strong> to save and <strong>achieve</strong> your <strong>financial goals</strong>.
                     </p>
 
-                    <Link to="/dashboard" className="button is-danger mt-3 mainhero-button" onClick={requestMetamask}>Start Saving</Link>
+                    <a className={"button is-danger mt-3 mainhero-button" + (isLoading ? " is-loading" : "")} onClick={requestMetamask}>Start Saving</a>
                 </div>
 
                 <div className="column">
