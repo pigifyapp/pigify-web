@@ -1,14 +1,16 @@
 import savingImage from "../../images/saving.jpg";
 import {useNavigate} from "react-router-dom";
 import {useState} from "react";
+import MetamaskModal from "./MetamaskModal";
 
 export default function Hero() {
     const [isLoading, setLoading] = useState(false)
+    const [isMetamaskModalOpen, setMetamaskModalOpen] = useState(false);
     const navigate = useNavigate();
 
     async function requestMetamask() {
         if(!window.ethereum) {
-            // open modal explaining that you need metamask or other wallet to use in order to use Pigify
+            setMetamaskModalOpen(true);
             return;
         }
 
@@ -35,8 +37,13 @@ export default function Hero() {
         }
     }
 
+    function handleMetamaskModalClose() {
+        setMetamaskModalOpen(false);
+    }
+
     return (
         <section className="hero hero-section is-fullheight">
+            <MetamaskModal isActive={isMetamaskModalOpen} handleClose={handleMetamaskModalClose} />
             <div className="hero-body columns">
                 <div className="column">
                     <p className="my-0 mb-3 mainhero-title">
