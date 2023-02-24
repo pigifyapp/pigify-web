@@ -117,5 +117,21 @@
 }
 
 footer {
-    background-color: rgba(218, 65, 103, 0.6);
+    background-color: rgba(218, 65, 103, 0.3);
+    color: white;
+}
+
+footer .subtitle strong {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-weight: 700;
+}
+
+footer a {
+    color: #2d2c2c !important;
+    font-weight: bolder;
+}
+
+footer strong {
+    color: #1a1919 !important;
 }
