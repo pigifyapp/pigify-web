@@ -14,7 +14,7 @@ export default function PresaleModal({ isActive, handleClose }) {
                         <div className="column has-text-centered">
                             <p>Max Supply: <strong>100,000,000 $PGY</strong></p>
                             <p>Sale Allocation: <strong>8%</strong></p>
-                            <p>Price: <strong>1 PGY = 0.4 USD</strong></p>
+                            <p>Price: <strong>1 PGY = 0.4 USDT</strong></p>
 
                             <hr/>
                             <p>We're allocating 8 million tokens to our presale</p>
