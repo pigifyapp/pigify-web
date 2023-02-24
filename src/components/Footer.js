@@ -37,7 +37,7 @@ export default function Footer() {
                 </div>
             </div>
 
-            <div className="container mt-6 has-text-centered">
+            <div className="container mt-4 has-text-centered">
                 <p className="py-4">
                     <strong>
                         Made with ❤️ by <a href="https://twitter.com/dresnite">@dresnite</a>
