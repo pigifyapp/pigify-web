@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/../pigify-core/deploy.js" beforeDir="false" afterPath="$PROJECT_DIR$/../pigify-core/deploy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/dashboard/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Navbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/home/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +99,7 @@
       <workItem from="1676770778822" duration="35896000" />
       <workItem from="1676938394043" duration="8776000" />
       <workItem from="1676989132133" duration="31585000" />
-      <workItem from="1677200332375" duration="3478000" />
+      <workItem from="1677200332375" duration="4631000" />
     </task>
     <task id="LOCAL-00001" summary="README: Add testnet address">
       <created>1676041552330</created>
@@ -401,15 +402,27 @@
       <option name="project" value="LOCAL" />
       <updated>1677203252711</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Remove useless anchors from Dashboard navbar">
+      <created>1677204563258</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1677204563258</updated>
+    </task>
+    <task id="LOCAL-00045" summary="BankEntry: Set min input number to 2 tokens">
+      <created>1677206195330</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1677206195330</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="BankEntry: Fix fetchGoalToken" />
-    <MESSAGE value="Add USDC token" />
     <MESSAGE value="New address on goerli testnet" />
     <MESSAGE value="Pigify: Update USDT address" />
     <MESSAGE value="Complete deposits functionality" />
@@ -433,6 +446,8 @@
     <MESSAGE value="Better file organization" />
     <MESSAGE value="Navbar: Fix anchors to redirecting to the right sections" />
     <MESSAGE value="Open modal with instructions to install Metamask if Wallet is not found" />
-    <option name="LAST_COMMIT_MESSAGE" value="Open modal with instructions to install Metamask if Wallet is not found" />
+    <MESSAGE value="Remove useless anchors from Dashboard navbar" />
+    <MESSAGE value="BankEntry: Set min input number to 2 tokens" />
+    <option name="LAST_COMMIT_MESSAGE" value="BankEntry: Set min input number to 2 tokens" />
   </component>
 </project>

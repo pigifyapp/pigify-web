@@ -5,7 +5,7 @@ export default function Navbar() {
         <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
             <div className="container">
                 <div className="navbar-brand">
-                    <a className="navbar-item" href="src/components#">
+                    <a className="navbar-item" href="/">
                         <span className="title is-pink">
                             <i className="fa-solid fa-piggy-bank"></i>
 
