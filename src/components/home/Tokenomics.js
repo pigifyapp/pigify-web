@@ -30,10 +30,6 @@ const data = {
     ],
 };
 
-function TokenomicsTableEntry() {
-    return null;
-}
-
 export default function Tokenomics() {
     return (
         <section id="tokenomics" className="hero-section tokenomics-section">
