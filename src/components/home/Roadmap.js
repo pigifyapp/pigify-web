@@ -44,7 +44,7 @@ export default function Roadmap() {
                             <div className="step-item">
                                 <div className="step-marker">3</div>
                                 <div className="step-details">
-                                    <p className="step-title">Q3 2024</p>
+                                    <p className="step-title">Q3 2023</p>
                                     <ul>
                                         <li>Mobile App</li>
                                         <li>Affiliate Program</li>
