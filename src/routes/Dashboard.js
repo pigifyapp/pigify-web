@@ -3,7 +3,7 @@ import PGY from "../images/PGY.png"
 import USDC from "../images/USDC.png";
 import USDT from "../images/USDT.png";
 import BUSD from "../images/BUSD.png";
-import USDD from "../images/USDDD.png";
+import USDD from "../images/USDD.png";
 import DAI from "../images/DAI.png";
 import {useEffect, useState} from "react";
 import Navbar from "../components/dashboard/Navbar";
