@@ -17,7 +17,6 @@ export default function Footer() {
 
                         <p><a href="https://pigify.gitbook.io/introduction/">Whitepaper</a></p>
                         <p><a href="https://github.com/PigifyApp">Open Source</a></p>
-                        <p><a href="https://dresnite.com/blog">Blog</a></p>
                     </div>
 
                     <div className="column">
