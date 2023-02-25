@@ -135,3 +135,7 @@ footer a {
 footer strong {
     color: #1a1919 !important;
 }
+
+.navbar-menu.is-active {
+    background: rgba(218, 65, 103, 1);
+}

@@ -3,6 +3,7 @@ import PresaleModal from "./PresaleModal";
 
 export default function Navbar() {
     const [isPresaleModalOpen, setPresaleModalOpen] = useState(false);
+    const [isNavbarActive, setNavbarActive] = useState(false);
 
     function handlePresaleModalOpen() {
         setPresaleModalOpen(true);
@@ -27,14 +28,14 @@ export default function Navbar() {
                         </a>
 
                         <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false"
-                           data-target="navbarBasicExample">
+                           data-target="navbar" onClick={() => { setNavbarActive(!isNavbarActive) }}>
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
                             <span aria-hidden="true"></span>
                         </a>
                     </div>
 
-                    <div id="navbarBasicExample" className="navbar-menu">
+                    <div id="navbar" className={"navbar-menu" + (isNavbarActive ? " is-active" : "")}>
                         <div className="navbar-end">
                             <a href="https://pigify.gitbook.io/introduction/" target="_blank" className="navbar-item">
                             <span className="icon whitepaper-icon">
