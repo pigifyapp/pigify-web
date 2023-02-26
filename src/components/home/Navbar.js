@@ -5,17 +5,9 @@ export default function Navbar() {
     const [isPresaleModalOpen, setPresaleModalOpen] = useState(false);
     const [isNavbarActive, setNavbarActive] = useState(false);
 
-    function handlePresaleModalOpen() {
-        setPresaleModalOpen(true);
-    }
-
-    function handlePresaleModalClose() {
-        setPresaleModalOpen(false);
-    }
-
     return (
         <section>
-            <PresaleModal isActive={isPresaleModalOpen} handleClose={handlePresaleModalClose} />
+            <PresaleModal isActive={isPresaleModalOpen} handleClose={() => { setPresaleModalOpen(false) } } />
             <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
                 <div className="container">
                     <div className="navbar-brand">
@@ -62,7 +54,7 @@ export default function Navbar() {
                             </a>
 
                             <div className="navbar-item">
-                                <a onClick={handlePresaleModalOpen} className="button presale-button is-white">
+                                <a onClick={() => { setPresaleModalOpen(true) } } className="button presale-button is-white">
                                     <strong>Presale</strong>
                                 </a>
                             </div>
