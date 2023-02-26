@@ -17,6 +17,7 @@ export default function Footer() {
 
                         <p><a href="https://pigify.gitbook.io/introduction/">Whitepaper</a></p>
                         <p><a href="https://github.com/PigifyApp">Open Source</a></p>
+                        <p><a href="https://docs.google.com/presentation/d/e/2PACX-1vQn1XAc3qhqU-pSJhXXIdT3KyyJ0kSUxzMqbkA_NWPqTbe0xf602cmLBjC9yvDtqC6ShD3FzngYBcQj/pub?start=false&loop=false&delayms=60000">Marketing Deck</a></p>
                     </div>
 
                     <div className="column">
@@ -30,6 +31,12 @@ export default function Footer() {
                         <p>
                             <a href="https://twitter.com/PigifyApp">
                                 <span style={{ color: "white" }}><i className="fa-brands fa-twitter"></i></span> @PigifyApp
+                            </a>
+                        </p>
+
+                        <p>
+                            <a href="https://t.me/+xSxMbVsEg3dkOWQ8">
+                                <span style={{ color: "white" }}><i className="fa-brands fa-telegram"></i></span> Telegram Group
                             </a>
                         </p>
                     </div>
