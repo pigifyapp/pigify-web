@@ -10,9 +10,7 @@ export default function Hero() {
     const navigate = useNavigate();
 
     function getWalletNetworkDetails() {
-        const isTesting = false;
-
-        if(isTesting || process.env.IS_TESTING) {
+        if(process.env.IS_TESTING) {
             return {
                 desiredId: 97,
                 network: {
