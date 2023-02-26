@@ -109,13 +109,9 @@ export default function Hero() {
         }
     }
 
-    function handleMetamaskModalClose() {
-        setMetamaskModalOpen(false);
-    }
-
     return (
         <section className="hero hero-section is-fullheight">
-            <MetamaskModal isActive={isMetamaskModalOpen} handleClose={handleMetamaskModalClose} />
+            <MetamaskModal isActive={isMetamaskModalOpen} handleClose={() => { setMetamaskModalOpen(false); }} />
             <div className="hero-body columns">
                 <div className="column">
                     <p className="my-0 mb-3 mainhero-title">
