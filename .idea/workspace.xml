@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7aec8ed4-a412-482f-b961-4b65add8f772" name="Changes" comment="New colors for roadmap gradient">
-      <change beforePath="$PROJECT_DIR$/../pigify-core/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../pigify-core/README.md" afterDir="false" />
+    <list default="true" id="7aec8ed4-a412-482f-b961-4b65add8f772" name="Changes" comment="Roadmap: Fix typo">
       <change beforePath="$PROJECT_DIR$/../pigify-core/deploy.js" beforeDir="false" afterPath="$PROJECT_DIR$/../pigify-core/deploy.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/dashboard/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/dashboard/Navbar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/home/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/home/Navbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +39,7 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/andres/Documents/Development/Pigify/pigify-web/src/web3&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/andres/Documents/Development/Pigify/pigify-web/src/images&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -54,24 +52,31 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/web3" />
       <recent name="$PROJECT_DIR$/src/components/dashboard" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$/../pigify-core/contracts" />
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src/components/home" />
       <recent name="$PROJECT_DIR$/src/components/dashboard" />
-      <recent name="$PROJECT_DIR$/src/images" />
-      <recent name="$PROJECT_DIR$/src/web3" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Node.js.deploy.js">
+    <configuration name="compile.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../pigify-core/compile.js" working-dir="$PROJECT_DIR$/../pigify-core">
+      <method v="2" />
+    </configuration>
     <configuration name="deploy.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/../pigify-core/deploy.js" working-dir="$PROJECT_DIR$/../pigify-core">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.deploy.js" />
+        <item itemvalue="Node.js.compile.js" />
       </list>
     </recent_temporary>
   </component>
@@ -99,252 +104,15 @@
       <workItem from="1676770778822" duration="35896000" />
       <workItem from="1676938394043" duration="8776000" />
       <workItem from="1676989132133" duration="31585000" />
-      <workItem from="1677200332375" duration="4631000" />
-    </task>
-    <task id="LOCAL-00001" summary="README: Add testnet address">
-      <created>1676041552330</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1676041552330</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Initial commit">
-      <created>1676127872175</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1676127872176</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Improve deploy script">
-      <created>1676127928263</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1676127928263</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Increase gas limit so tests don't fail">
-      <created>1676208341825</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1676208341826</updated>
-    </task>
-    <task id="LOCAL-00005" summary="README: Latest contract address">
-      <created>1676208720354</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1676208720354</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Show balance and goal">
-      <created>1676212725379</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1676212725379</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Add tokenomics section">
-      <created>1676602951158</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1676602951158</updated>
-    </task>
-    <task id="LOCAL-00008" summary="New colors for roadmap gradient">
-      <created>1676604293264</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1676604293264</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Start building saving dashboard">
-      <created>1676648748799</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1676648748799</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Update roadmap and tokenomics">
-      <created>1676751330564</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1676751330564</updated>
-    </task>
-    <task id="LOCAL-00011" summary="App: Export function with modern syntax">
-      <created>1676751440203</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1676751440203</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Fix 'isSaving' state being used incorrectly">
-      <created>1676770148796</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1676770148796</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Rename PiggyBank and PiggyBankList to BankEntry and BankList">
-      <created>1676770250179</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1676770250179</updated>
-    </task>
-    <task id="LOCAL-00014" summary="Navbar: Fix wrong usage of isSaving state">
-      <created>1676770301363</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1676770301363</updated>
-    </task>
-    <task id="LOCAL-00015" summary="Add modals to open deposits/withdraw">
-      <created>1676775509110</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1676775509110</updated>
-    </task>
-    <task id="LOCAL-00016" summary="Add TUSD to the list of tokens that can be saved">
-      <created>1676775712962</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1676775712962</updated>
-    </task>
-    <task id="LOCAL-00017" summary="BankEntry: Add set goal button and modal">
-      <created>1676823355683</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1676823355683</updated>
-    </task>
-    <task id="LOCAL-00018" summary="Show balance and goal in every bank entry">
-      <created>1676839917517</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1676839917517</updated>
-    </task>
-    <task id="LOCAL-00019" summary="BankEntry: Fix fetchGoalToken">
-      <created>1676846614972</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1676846614972</updated>
-    </task>
-    <task id="LOCAL-00020" summary="Add USDC token">
-      <created>1676853798977</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1676853798977</updated>
-    </task>
-    <task id="LOCAL-00021" summary="New address on goerli testnet">
-      <created>1676853884099</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1676853884099</updated>
-    </task>
-    <task id="LOCAL-00022" summary="Pigify: Update USDT address">
-      <created>1676858429836</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1676858429836</updated>
-    </task>
-    <task id="LOCAL-00023" summary="Complete deposits functionality">
-      <created>1676861564048</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1676861564048</updated>
-    </task>
-    <task id="LOCAL-00024" summary="Optimize for less gas use">
-      <created>1676861640984</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1676861640984</updated>
-    </task>
-    <task id="LOCAL-00025" summary="BankEntry: Update everything after a deposit is completed">
-      <created>1676862801784</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1676862801784</updated>
-    </task>
-    <task id="LOCAL-00026" summary="Goals can now be established">
-      <created>1676867026656</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1676867026656</updated>
-    </task>
-    <task id="LOCAL-00027" summary="PigifyNativeToken: Reduce max supply to 100 million">
-      <created>1676938469542</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1676938469542</updated>
-    </task>
-    <task id="LOCAL-00028" summary="Updates to tokenomics">
-      <created>1676943166014</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1676943166014</updated>
-    </task>
-    <task id="LOCAL-00029" summary=".gitignore: add .idea">
-      <created>1676943191764</created>
-      <option name="number" value="00029" />
-      <option name="presentableId" value="LOCAL-00029" />
-      <option name="project" value="LOCAL" />
-      <updated>1676943191764</updated>
-    </task>
-    <task id="LOCAL-00030" summary="BankEntry: remove unused setRewards method">
-      <created>1676943218716</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1676943218716</updated>
-    </task>
-    <task id="LOCAL-00031" summary="BankList: Remove unused images">
-      <created>1676943236257</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1676943236257</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Better looking landing page">
-      <created>1676943317049</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1676943317049</updated>
-    </task>
-    <task id="LOCAL-00033" summary="withdrawToken(): Use transfer() instead of transferFrom()">
-      <created>1676946953016</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1676946953016</updated>
-    </task>
-    <task id="LOCAL-00034" summary="Added deposit fee to tokens">
-      <created>1677039654601</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1677039654601</updated>
-    </task>
-    <task id="LOCAL-00035" summary="Show deposit fee instead of reward in bank entry">
-      <created>1677039681798</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1677039681798</updated>
+      <workItem from="1677200332375" duration="22643000" />
+      <workItem from="1677250116248" duration="1218000" />
+      <workItem from="1677264200615" duration="31427000" />
+      <workItem from="1677425459882" duration="6085000" />
+      <workItem from="1677448458035" duration="2515000" />
+      <workItem from="1677512361488" duration="1588000" />
+      <workItem from="1677541917232" duration="2898000" />
+      <workItem from="1677550985441" duration="10000" />
+      <workItem from="1677611741806" duration="397000" />
     </task>
     <task id="LOCAL-00036" summary="BankList: Add deposit fee">
       <created>1677039698758</created>
@@ -416,38 +184,322 @@
       <option name="project" value="LOCAL" />
       <updated>1677206195330</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Navbar: Redirect to home page when the logic is clicked">
+      <created>1677206632723</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1677206632723</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Fix some numbers being too big for JavaScript">
+      <created>1677218030514</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1677218030514</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Dashboard: Use web3's requestAccounts() instead of getAccounts()">
+      <created>1677218210490</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1677218210490</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Point to BSC contract address">
+      <created>1677218238642</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1677218238642</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Switch to the right network before app launch">
+      <created>1677234900357</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1677234900361</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Fix launch not showing when the app is loading">
+      <created>1677235073396</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1677235073396</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Add footer">
+      <created>1677237886694</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1677237886694</updated>
+    </task>
+    <task id="LOCAL-00053" summary="Add footer styling">
+      <created>1677271495323</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1677271495324</updated>
+    </task>
+    <task id="LOCAL-00054" summary="Add favicon">
+      <created>1677271509223</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1677271509223</updated>
+    </task>
+    <task id="LOCAL-00055" summary="Tokenomics: Update presale percentage">
+      <created>1677271571888</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1677271571889</updated>
+    </task>
+    <task id="LOCAL-00056" summary="Add presale modal">
+      <created>1677271596860</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1677271596860</updated>
+    </task>
+    <task id="LOCAL-00057" summary="PresaleModal: Use price in USDT">
+      <created>1677271726096</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1677271726096</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Footer: Use company mail">
+      <created>1677272367886</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1677272367886</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Footer: Better looking copyright text">
+      <created>1677273888187</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1677273888187</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Remove dead dependencies">
+      <created>1677321157980</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1677321157980</updated>
+    </task>
+    <task id="LOCAL-00061" summary="dependencies update">
+      <created>1677328309059</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1677328309059</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Remose useless assets from public folder">
+      <created>1677329234984</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1677329234984</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Set max space size so heroku doesn't crash">
+      <created>1677331388673</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1677331388673</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Set max space size again so heroku doesn't crash">
+      <created>1677332197314</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1677332197314</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Remove dead method">
+      <created>1677332294686</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1677332294686</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Optimize for size">
+      <created>1677333130822</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1677333130822</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Roadmap: Fix typo">
+      <created>1677333873986</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1677333873986</updated>
+    </task>
+    <task id="LOCAL-00068" summary="pigify: Set mainnet smart contract address">
+      <created>1677337153407</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1677337153407</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Set shortcut icon">
+      <created>1677338259869</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1677338259869</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Add mainnet address">
+      <created>1677340894974</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1677340894974</updated>
+    </task>
+    <task id="LOCAL-00071" summary="README: Update how it works section and remove disclaimer section">
+      <created>1677341685727</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1677341685727</updated>
+    </task>
+    <task id="LOCAL-00072" summary="Add DAI, BUSD and USDD">
+      <created>1677352592980</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1677352592980</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Added BUSD, USDD and DAI">
+      <created>1677353080029</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1677353080029</updated>
+    </task>
+    <task id="LOCAL-00074" summary="Update mainnet address&#10;&#10;This is something that I can still afford to do since nobody is using $PGY">
+      <created>1677353179267</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1677353179267</updated>
+    </task>
+    <task id="LOCAL-00075" summary="Dashboard: Fix image path typo">
+      <created>1677353265270</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1677353265270</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Footer: Remove blog from useful links">
+      <created>1677357392205</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1677357392206</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Fix navbar on mobile devices">
+      <created>1677361724447</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1677361724447</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Footer: Add marketing deck and telegram group">
+      <created>1677380695316</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1677380695316</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Implement presale contract">
+      <created>1677430426458</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1677430426459</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Remove hardcoded variable to enable testing">
+      <created>1677448517277</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1677448517277</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Remove unnecessary code">
+      <created>1677448657763</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1677448657763</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Navbar: Remove a couple of useless methods">
+      <created>1677448743571</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1677448743571</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Hero text: Occupy 12 columns on mobile">
+      <created>1677550432271</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1677550432272</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Update roadmap component">
+      <created>1677550692172</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1677550692172</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="New address on goerli testnet" />
-    <MESSAGE value="Pigify: Update USDT address" />
-    <MESSAGE value="Complete deposits functionality" />
-    <MESSAGE value="Optimize for less gas use" />
-    <MESSAGE value="BankEntry: Update everything after a deposit is completed" />
-    <MESSAGE value="Goals can now be established" />
-    <MESSAGE value="PigifyNativeToken: Reduce max supply to 100 million" />
-    <MESSAGE value="Updates to tokenomics" />
-    <MESSAGE value=".gitignore: add .idea" />
-    <MESSAGE value="BankEntry: remove unused setRewards method" />
-    <MESSAGE value="BankList: Remove unused images" />
-    <MESSAGE value="Better looking landing page" />
-    <MESSAGE value="withdrawToken(): Use transfer() instead of transferFrom()" />
-    <MESSAGE value="Added deposit fee to tokens" />
-    <MESSAGE value="Show deposit fee instead of reward in bank entry" />
-    <MESSAGE value="BankList: Add deposit fee" />
-    <MESSAGE value="Some aesthetical changes" />
-    <MESSAGE value="Add new abi and contract address" />
-    <MESSAGE value="Start using react-router" />
-    <MESSAGE value="MainHero: Don't redirect until the user lets metamask accept accounts" />
-    <MESSAGE value="Better file organization" />
-    <MESSAGE value="Navbar: Fix anchors to redirecting to the right sections" />
-    <MESSAGE value="Open modal with instructions to install Metamask if Wallet is not found" />
-    <MESSAGE value="Remove useless anchors from Dashboard navbar" />
-    <MESSAGE value="BankEntry: Set min input number to 2 tokens" />
-    <option name="LAST_COMMIT_MESSAGE" value="BankEntry: Set min input number to 2 tokens" />
+    <MESSAGE value="Remove dead dependencies" />
+    <MESSAGE value="dependencies update" />
+    <MESSAGE value="Remose useless assets from public folder" />
+    <MESSAGE value="Set max space size so heroku doesn't crash" />
+    <MESSAGE value="Set max space size again so heroku doesn't crash" />
+    <MESSAGE value="Remove dead method" />
+    <MESSAGE value="Optimize for size" />
+    <MESSAGE value="Roadmap: Fix typo" />
+    <MESSAGE value="pigify: Set mainnet smart contract address" />
+    <MESSAGE value="Set shortcut icon" />
+    <MESSAGE value="Add mainnet address" />
+    <MESSAGE value="README: Update how it works section and remove disclaimer section" />
+    <MESSAGE value="Add DAI, BUSD and USDD" />
+    <MESSAGE value="Added BUSD, USDD and DAI" />
+    <MESSAGE value="Update mainnet address&#10;&#10;This is something that I can still afford to do since nobody is using $PGY" />
+    <MESSAGE value="Dashboard: Fix image path typo" />
+    <MESSAGE value="Footer: Remove blog from useful links" />
+    <MESSAGE value="Fix navbar on mobile devices" />
+    <MESSAGE value="Footer: Add marketing deck and telegram group" />
+    <MESSAGE value="Implement presale contract" />
+    <MESSAGE value="Remove hardcoded variable to enable testing" />
+    <MESSAGE value="Remove unnecessary code" />
+    <MESSAGE value="Navbar: Remove a couple of useless methods" />
+    <MESSAGE value="Hero text: Occupy 12 columns on mobile" />
+    <MESSAGE value="Update roadmap component" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update roadmap component" />
   </component>
 </project>

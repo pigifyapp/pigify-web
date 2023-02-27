@@ -113,12 +113,16 @@ export default function Hero() {
         <section className="hero hero-section is-fullheight">
             <MetamaskModal isActive={isMetamaskModalOpen} handleClose={() => { setMetamaskModalOpen(false); }} />
             <div className="hero-body columns">
-                <div className="column is-12-mobile">
+                <div className="column is-12-mobile has-text-centered-mobile">
                     <p className="my-0 mb-3 mainhero-title">
                         Shape your financial destiny.
                     </p>
 
-                    <p className="my-3 mainhero-subtitle" style={{width: "80%"}}>
+                    <p className="my-3 mainhero-subtitle is-hidden-mobile" style={{width: "80%"}}>
+                        Pigify is a <strong>decentralized</strong> saving platform that will <strong>force you</strong> to save and <strong>achieve</strong> your <strong>financial goals</strong>.
+                    </p>
+
+                    <p className="my-3 mainhero-subtitle is-hidden-tablet">
                         Pigify is a <strong>decentralized</strong> saving platform that will <strong>force you</strong> to save and <strong>achieve</strong> your <strong>financial goals</strong>.
                     </p>
 
