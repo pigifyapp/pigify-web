@@ -113,7 +113,7 @@ export default function Hero() {
         <section className="hero hero-section is-fullheight">
             <MetamaskModal isActive={isMetamaskModalOpen} handleClose={() => { setMetamaskModalOpen(false); }} />
             <div className="hero-body columns">
-                <div className="column">
+                <div className="column is-12-mobile">
                     <p className="my-0 mb-3 mainhero-title">
                         Shape your financial destiny.
                     </p>
