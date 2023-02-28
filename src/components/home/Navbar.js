@@ -28,7 +28,7 @@ export default function Navbar() {
                     </div>
 
                     <div id="navbar" className={"navbar-menu" + (isNavbarActive ? " is-active" : "")}>
-                        <div className="navbar-end">
+                        <div className="navbar-end has-text-centered-tablet has-text-centered-mobile">
                             <a href="https://pigify.gitbook.io/introduction/" target="_blank" className="navbar-item">
                             <span className="icon whitepaper-icon">
                                 <i className="fa-solid fa-paperclip"></i>
@@ -54,7 +54,7 @@ export default function Navbar() {
                             </a>
 
                             <div className="navbar-item">
-                                <a onClick={() => { setPresaleModalOpen(true) } } className="button presale-button is-white">
+                                <a onClick={() => { setPresaleModalOpen(true) } } className="button is-fullwidth presale-button is-white">
                                     <strong>Presale</strong>
                                 </a>
                             </div>
