@@ -62,8 +62,8 @@ export default function Roadmap() {
                                 <div className="step-details">
                                     <p className="step-title">Q4 2023</p>
                                     <ul>
-                                        <li>Launch in more networks</li>
-                                        <li>Marketing</li>
+                                        <li>More Blockchains</li>
+                                        <li>Save-A-Thon</li>
                                     </ul>
                                 </div>
                             </div>
