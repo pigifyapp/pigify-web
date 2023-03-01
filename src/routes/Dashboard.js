@@ -23,6 +23,12 @@ export default function Dashboard() {
 
     useEffect(() => {
         fetchAddress()
+            .then(() => {
+                console.log("Address fetched.");
+            })
+            .catch(() => {
+                console.log("Failed to fetch address");
+            });
     }, []);
 
     return (
