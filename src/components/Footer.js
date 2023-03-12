@@ -29,8 +29,8 @@ export default function Footer() {
                         </p>
 
                         <p>
-                            <a href="https://twitter.com/PigifyApp">
-                                <span style={{ color: "white" }}><i className="fa-brands fa-twitter"></i></span> @PigifyApp
+                            <a href="https://twitter.com/dresnite">
+                                <span style={{ color: "white" }}><i className="fa-brands fa-twitter"></i></span> @dresnite
                             </a>
                         </p>
 
